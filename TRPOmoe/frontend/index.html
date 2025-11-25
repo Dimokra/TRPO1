@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+  </head>
+  <body>
+    <header>header</header>
+    <main>
+
+      <form id="addStudent" class="createStudentForm" action="">
+        <label for="studentFirstName"> Имя студента </label>
+          <input type="text" name="studentFirstName" />
+        <label for="studentLastName"> Фамилия студента </label>
+            <input id="" type="text" name="studentLastName" />
+        <label for="studentSurname"> Отчество студента </label>
+          <input id="" type="text" name="studentSurname" /> 
+          <label for="studentBirthday"> Дата рождения </label>
+          <input type="date" name="studentBirthday" />
+        <label for="studentAge"> Возраст студента </label>
+            <input id="" type="number" name="studentAge" />
+        <label for="studentGroup"> Факультет студента </label>
+          <input id="" type="text" name="studentGroup" /> 
+          <button type="submit"></button>
+      </form>
+
+
+        <form class="form-filter" action="">
+          <label for="">
+            <input type="text" name="" />
+          </label>
+          <label for="">
+            <input type="number" name="" />
+          </label>
+          <label for="">
+            <input type="text" name="" />
+          </label>
+        </form>
+
+<table class="student-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Отчество</th>
+      <th>Дата рождения</th>
+      <th>Возраст</th>
+      <th>Факультет</th>
+      <th>Действия</th>
+    </tr>
+  </thead>
+  <tbody id="studentsTableBody">
+    
+  </tbody>
+</table>
+    </main>
+    <footer>footer</footer>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>

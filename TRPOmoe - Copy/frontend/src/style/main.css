@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 16px;
+  color: #222;
+}
+
+h1, h2 {
+  margin: 8px 0;
+}
+
+.createStudentForm, .form-filter {
+  border: 1px solid #cfcfcf;
+  padding: 12px;
+  border-radius: 6px;
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+  margin-bottom: 12px;
+}
+
+.createStudentForm label, .form-filter label {
+  font-size: 0.9rem;
+}
+
+.createStudentForm input, .form-filter input {
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.student-table th, .student-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-table th.sortable {
+  cursor: pointer;
+  background: #f7f7f7;
+  user-select: none;
+}
+
+.student-table th.sorted[data-order="asc"]::after {
+  content: " ▲";
+}
+
+.student-table th.sorted[data-order="desc"]::after {
+  content: " ▼";
+}
+
+
+.student-table th.sorted[data-order="asc"]::after { content: " ▲"; }
+.student-table th.sorted[data-order="desc"]::after { content: " ▼"; }
+
+.delete-btn {
+  background: #d9534f;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.form-errors {
+  color: #c00;
+  margin-top: 8px;
+}
